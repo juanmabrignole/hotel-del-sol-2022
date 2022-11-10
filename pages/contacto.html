@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Favicon-->
+    <link rel="shortcut icon" href="../assets/icons/newIcon.svg" type="image/x-icon">
+    <!--Hoja de Estilos Externa CSS-->
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Hotel del sol-contacto</title>
+</head>
+<body id="body-contact">
+
+    <nav>
+
+        <a href="#">
+            <img src="../assets/logo/hotelDelSolLogo.png" alt="logo-hotel-del-sol" width="100px">
+        </a>
+
+           
+                    <a href="../index.html">Home</a>   
+            
+               
+                    <a  href="#">Habitaciones
+                    </a>    
+             
+          
+                    <a href="./galeria-de-fotos.html" >Galería de Fotos
+                    </a>
+                
+                    <a href="./promociones.html">Promociones</a>
+             
+                    <a href="./contacto.html">Contacto</a>          
+            </ul>
+    </nav>
+
+    <!--Formulario HTML-->
+
+    <h1>Te estamos esperando!</h1>
+
+    <form action="procesar.php" method="get">
+
+        <div>       
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" placeholder="Escriba su nombre">
+        </div>
+
+        <div>
+        <label for="apellido">Apellido:</label>
+        <input type="text" name="apellido" placeholder="Escriba su nombre">
+        </div>
+
+        <div>
+        <label for="telefono">Teléfono:</label>
+        <input type="text" name="telefono" placeholder="Escriba su teléfono">
+        </div>
+
+        <div>
+        <label for="mail">Correo Electrónico:</label>
+        <input type="email" name="email" placeholder="Escriba su teléfono">
+        </div>
+
+        <div>
+        <label for="pass">Contraseña:</label>
+        <input type="password" name="pass" placeholder="Escriba su contraseña">
+        </div>
+
+        <!--Radio-->
+        <h3>Elija su habitación: </h3>
+
+        <label for="room">Clásica</label>
+        <input type="radio" name="room" value="clasica">
+
+        <label for="room">Large Suite</label>
+        <input type="radio" name="room" value="large-suite">
+
+        <label for="room">Studio</label>
+        <input type="radio" name="room" value="studio">
+
+        <!--Checkbox-->
+        <h3>Acepta términos y condiciones</h3>
+        <input type="checkbox" name="acepta" value="1">
+
+        <!--Menú Desplegable-->
+        <h3>¿Cuántos huéspedes se van a alojar?</h3>
+        <select name="huespedes">
+            <option value="1">Un huésped</option>
+            <option value="2">Dos huéspedes</option>
+            <option value="3">Tres huéspedes</option>
+        </select>
+
+        <h3>Mensaje: </h3>
+        <textarea name="mensaje" cols="30" rows="10"></textarea>
+
+        <div>
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar Formulario</button>
+        <button type="button">Botón que no hace nada</button>
+        </div>
+    
+    </form>
+
+
+  
+</body>
+</html>
