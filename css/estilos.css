@@ -12,6 +12,10 @@
     box-sizing: border-box;
 }
 
+img{
+    width: 50%;
+}
+
 
 /*Selector de clase*/
 .img-home{
